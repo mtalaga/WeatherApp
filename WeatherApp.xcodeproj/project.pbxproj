@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		D2D03DBF1C575E0F000568DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D03DBE1C575E0F000568DF /* AppDelegate.swift */; };
-		D2D03DC11C575E0F000568DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D03DC01C575E0F000568DF /* ViewController.swift */; };
 		D2D03DC41C575E0F000568DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D03DC21C575E0F000568DF /* Main.storyboard */; };
 		D2D03DC61C575E0F000568DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D03DC51C575E0F000568DF /* Assets.xcassets */; };
 		D2D03DC91C575E0F000568DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D03DC71C575E0F000568DF /* LaunchScreen.storyboard */; };
+		D2D03DD11C575E71000568DF /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D03DD01C575E71000568DF /* Location.swift */; };
+		D2D03DD51C575ED1000568DF /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D03DD41C575ED1000568DF /* LocationViewController.swift */; };
+		D2D03DD71C5767EE000568DF /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D03DD61C5767EE000568DF /* TableCell.swift */; };
+		D2D03DD91C57A966000568DF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D03DD81C57A966000568DF /* TableViewController.swift */; };
+		D2D03DDD1C5918E8000568DF /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D03DDC1C5918E8000568DF /* PopoverViewController.swift */; };
+		D2D03DDF1C591F2D000568DF /* PopoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D03DDE1C591F2D000568DF /* PopoverCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D2D03DBB1C575E0F000568DF /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D03DBE1C575E0F000568DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2D03DC01C575E0F000568DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D2D03DC31C575E0F000568DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2D03DC51C575E0F000568DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2D03DC81C575E0F000568DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2D03DCA1C575E0F000568DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D03DD01C575E71000568DF /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		D2D03DD41C575ED1000568DF /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		D2D03DD61C5767EE000568DF /* TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		D2D03DD81C57A966000568DF /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		D2D03DDC1C5918E8000568DF /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		D2D03DDE1C591F2D000568DF /* PopoverCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,43 @@
 		D2D03DBD1C575E0F000568DF /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				D2DD02FE1C5A706800DCC5CF /* Models */,
+				D2DD02FD1C5A702700DCC5CF /* Views */,
+				D2DD02FC1C5A700B00DCC5CF /* ViewControllers */,
 				D2D03DBE1C575E0F000568DF /* AppDelegate.swift */,
-				D2D03DC01C575E0F000568DF /* ViewController.swift */,
 				D2D03DC21C575E0F000568DF /* Main.storyboard */,
 				D2D03DC51C575E0F000568DF /* Assets.xcassets */,
 				D2D03DC71C575E0F000568DF /* LaunchScreen.storyboard */,
 				D2D03DCA1C575E0F000568DF /* Info.plist */,
 			);
 			path = WeatherApp;
+			sourceTree = "<group>";
+		};
+		D2DD02FC1C5A700B00DCC5CF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2D03DD41C575ED1000568DF /* LocationViewController.swift */,
+				D2D03DDC1C5918E8000568DF /* PopoverViewController.swift */,
+				D2D03DD81C57A966000568DF /* TableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D2DD02FD1C5A702700DCC5CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2D03DD61C5767EE000568DF /* TableCell.swift */,
+				D2D03DDE1C591F2D000568DF /* PopoverCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D2DD02FE1C5A706800DCC5CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2D03DD01C575E71000568DF /* Location.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +135,7 @@
 				TargetAttributes = {
 					D2D03DBA1C575E0F000568DF = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = U3M6BM86YT;
 					};
 				};
 			};
@@ -135,8 +175,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2D03DC11C575E0F000568DF /* ViewController.swift in Sources */,
+				D2D03DD71C5767EE000568DF /* TableCell.swift in Sources */,
+				D2D03DDF1C591F2D000568DF /* PopoverCell.swift in Sources */,
+				D2D03DD11C575E71000568DF /* Location.swift in Sources */,
 				D2D03DBF1C575E0F000568DF /* AppDelegate.swift in Sources */,
+				D2D03DD91C57A966000568DF /* TableViewController.swift in Sources */,
+				D2D03DDD1C5918E8000568DF /* PopoverViewController.swift in Sources */,
+				D2D03DD51C575ED1000568DF /* LocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,10 +292,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WeatherApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MT.WeatherApp;
+				PRODUCT_BUNDLE_IDENTIFIER = MT.WeatherAppToopLoox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -258,10 +306,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WeatherApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MT.WeatherApp;
+				PRODUCT_BUNDLE_IDENTIFIER = MT.WeatherAppToopLoox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -284,6 +335,7 @@
 				D2D03DCF1C575E0F000568DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
